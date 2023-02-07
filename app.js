@@ -10,7 +10,7 @@ if(num1 >= num2)
 console.log(`El numero ${num1} es mayor que ${num2}`);
  */
 
-let num1 = 12, num2 = 6, num3 = 24;
+/* let num1 = 12, num2 = 6, num3 = 24;
 
 let suma = () => num1 + num2 + num3;
 
@@ -51,4 +51,15 @@ const funArry = () => {
 
 const [frase, [otraFrase], numero] = funArry();
 
-console.log(frase, [otraFrase], numero);
+console.log(frase, [otraFrase], numero); */
+
+
+let edad = (max) => {
+    return Math.floor(Math.random() * max);
+}
+
+if (edad(25) >= 18) {
+    console.log("Valido");
+} else {
+console.log("No valido");
+}
