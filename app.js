@@ -59,41 +59,82 @@ edad >= 18 ? console.log(`Tienes ${edad} años de edad: VÁLIDO`) : console.log(
 
 let array = [
     {
-        tipo: '3a edad',
-        edad: 70
+        clasificación: 'vejez',
+        rangoEdad: {
+            min: 60,
+            max: 110
+        },
+        sexo: ['masculino', 'femenino']
     },
     {
-        tipo: 'adullto',
-        edad: 50
+        clasificación: 'adultez',
+        edad: {
+            min: 27,
+            max: 59
+        },
+        sexo: ['masculino', 'femenino']
     },
     {
-        tipo: 'joven',
-        edad: 25
+        clasificación: 'juventud',
+        edad: {
+            min: 14,
+            max: 26
+        },
+        sexo: ['masculino', 'femenino']
     },
     {
-        tipo: 'niño',
-        edad: 12
+        clasificación: 'adolescencia ',
+        edad: {
+            min: 12,
+            max: 18
+        },
+        sexo: ['masculino', 'femenino']
+    },
+    {
+        clasificación: 'infancia',
+        edad: {
+            min: 6,
+            max: 11
+        },
+        sexo: ['masculino', 'femenino']
     }
 ]
 
 for (let index = 0; index < array.length; index++) {
     console.log(array[index]);
-
 }
 
-switch (edad) {
-    case '3a edad':
+let clasificación;
 
+if (edad > 59) {
+    clasificación = array[0].clasificación;
+} else if (edad > 26 && edad < 60) {
+    clasificación = array[1].clasificación;
+} else if (edad > 13 && edad < 27) {
+    clasificación = array[2].clasificación;
+} else if (edad > 11 && edad < 19) {
+    clasificación = array[3].clasificación;
+} else if (edad > 5 && edad < 12) {
+    clasificación = array[4].clasificación;
+}
+
+console.log(clasificación, edad);
+
+switch (clasificación) {
+    case 'vejez':
+        console.log('Su entrada queda al 50% de descuento');
         break;
-    case 'adullto':
-
+    case 'adultez':
+        console.log('Todos los miercvoles tiene una entrada al 2X1');
         break;
-
-    case 'joven':
-
+    case 'juventud':
+        console.log('Todos los viernes tiene una combo al 2X1');
         break;
-    case 'niño':
-
+    case 'adolescencia':
+        console.log('Fines de semana antes de las 10 de la mañana las entradas al 50% de descuento');
+        break;
+    case 'infancia':
+        console.log('Solo pueden entrar a la sala para infantes');
         break;
     default:
         break;
