@@ -1,3 +1,5 @@
+//ACTIVIDAD 5
+
 /* let string = 'Javier';
 var edad = 25;
 const boolean = true;
@@ -9,6 +11,8 @@ console.log((num2*=num2)*(num1 + num2)/(num1*= num2));
 if(num1 >= num2)
 console.log(`El numero ${num1} es mayor que ${num2}`);
  */
+
+//ACTIVIDAD 6
 
 /* let num1 = 12, num2 = 6, num3 = 24;
 
@@ -53,7 +57,9 @@ const [frase, [otraFrase], numero] = funArry();
 
 console.log(frase, [otraFrase], numero); */
 
-let edad = Math.floor(Math.random() * 25);
+//ACTIVIDAD 7
+
+/* let edad = Math.floor(Math.random() * 25);
 
 edad >= 18 ? console.log(`Tienes ${edad} años de edad: VÁLIDO`) : console.log(`Tienes ${edad} años de edad: NO VÁLIDO`);
 
@@ -138,4 +144,57 @@ switch (clasificación) {
         break;
     default:
         break;
-}
+} */
+
+//ACTIVIDAD 8
+
+let zapatos = [
+    {
+        marca:      'NIKE',
+        stock:      8,
+        precios:    150.30 
+    },
+    {
+        marca:      'PUMA',
+        stock:      7,
+        precios:    80.5 
+    },
+    {
+        marca:      'ADIDAS',
+        stock:      6,
+        precios:    70.41 
+    },
+    {
+        marca:      'CONVERSE',
+        stock:      8,
+        precios:    120.8 
+    },
+];
+
+zapatos.forEach(e => {
+    console.log(e.marca, e.stock);
+});
+
+let filtroPrecio = zapatos.filter(e => e.precios > 200 /* || e.precios < 100 */);
+console.log(filtroPrecio);
+
+const zapatosMap = zapatos.map(e => e.precios);
+console.log(zapatosMap);
+
+let promedioPrecio = zapatosMap.reduce((eAnterior, eAtual) => eAnterior + eAtual);
+console.log(promedioPrecio/zapatos.length);
+
+zapatos.sort((a, b) =>{
+    if (a.marca == b.marca) {
+        return 0;
+    }
+    if (a.marca < b.marca) {
+        return -1;
+    }
+    return 1;
+})
+
+console.log(zapatos);
+
+
+console.log(Math.max(Math.round(...zapatosMap))); 
