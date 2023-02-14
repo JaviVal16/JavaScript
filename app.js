@@ -216,7 +216,7 @@ const apiCall = () => {
         .then(info => info.results.forEach(personajes => {
             charactersDiv.innerHTML +=
                 `
-        <div>
+        <div class="card">
         <h2>${personajes.name}</h2>
         <img src="${personajes.image}" alt="${personajes.name}">
         </div>

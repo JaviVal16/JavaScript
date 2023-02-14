@@ -28,6 +28,7 @@ html {
     font-size: x-large;
 }
 
+
 .aLocal {
     font-family: 'Kanit', sans-serif;
     color: aliceblue;
@@ -48,6 +49,73 @@ img {
 footer {
     display: flex;
     justify-content: space-around;
+}
+
+.aFooter {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+}
+
+.aFooter:hover {
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+}
+
+.wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.RickMortyA {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
     position: relative;
-    bottom: 0;
+    transition: all .35s;
+}
+
+.RickMortyA .RickMortyS {
+    position: relative;
+    z-index: 2;
+}
+
+.RickMortyA:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+}
+
+.RickMortyA:hover {
+    color: #fff;
+}
+
+.RickMortyA:hover:after {
+    width: 100%;
 }
