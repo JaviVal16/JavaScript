@@ -1,0 +1,53 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+
+.bodyLocal {
+    font-family: 'Kanit', sans-serif;
+    background-color: #0b233a;
+    color: aliceblue;
+}
+
+#characterCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#characterContLocal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+}
+
+.aLocal {
+    font-family: 'Kanit', sans-serif;
+    color: aliceblue;
+}
+
+p {
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    align-self: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 0;
+}

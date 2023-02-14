@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Carter-A259",
+        "alias": "Noble Uno",
+        "img": "./images/Noble1.jpg",
+        "descripcion": "El Comandante Carter-A259 fue un SPARTAN-III del Mando Naval de Guerra Especial del UNSC. Fue el líder del Equipo NOBLE, un equipo de élite compuesto por Spartans que luchó principalmente durante la Caída de Reach. Su Distintivo de Llamada en el grupo era Noble Uno."
+    },
+    {
+        "id": 2,
+        "nombre": "Catherine-B320",
+        "alias": "Kat: Noble 2",
+        "img": "./images/Noble2.jpg",
+        "descripcion": "La Teniente Comandante Catherine-B320, comúnmente llamada Kat, fue una SPARTAN-III de las fuerzas especiales del UNSC. Combatió con el Equipo NOBLE como Noble Dos durante la Caída de Reach en 2552.La Teniente Comandante Catherine-B320, comúnmente llamada Kat, fue una SPARTAN-III de las fuerzas especiales del UNSC. Combatió con el Equipo NOBLE como Noble Dos durante la Caída de Reach en 2552."
+    },
+    {
+        "id": 3,
+        "nombre": "Jun-A266",
+        "alias": "Noble Tres",
+        "img": "./images/Noble3.jpg",
+        "descripcion": "Jun-A266 es un comando SPARTAN-III del UNSC, adscrito al Grupo de Guerra Especial Tres. Peleó como parte del Equipo NOBLE como Noble Tres durante la Caída de Reach en 2552"
+    },
+    {
+        "id": 4,
+        "nombre": "Emile-A239",
+        "alias": "Noble 4",
+        "img": "./images/Noble4.jpg",
+        "descripcion": "Emile-A239 fue un SPARTAN-III del UNSC. Luchó como parte del Equipo NOBLE con el distintivo Noble Cuatro durante la Caída de Reach en 2552."
+    },
+    {
+        "id": 5,
+        "nombre": "Jorge-052",
+        "alias": "Noble 5",
+        "img": "./images/Noble5.jpg",
+        "descripcion": "El Oficial de la Orden Jorge-052 fue un comando SPARTAN-II del Comando de Guerra Especial en la Armada del UNSC, afiliado al Grupo de Guerra Especial 3. Luchó durante la Caída de Reach en 2552 como parte del Equipo NOBLE bajo el distintivo de Noble Cinco. Era el único SPARTAN-II del Equipo NOBLE."
+    },
+    {
+        "id": 6,
+        "nombre": "SPARTAN-B312",
+        "alias": "Noble 6",
+        "img": "./images/Noble6.jpg",
+        "descripcion": "El Teniente SPARTAN-B312 fue un SPARTAN-III adjunto al Grupo Tres del Comando Especial de Guerra del Ejército del UNSC. Durante la Caída de Reach en el verano de 2552, se desempeñó como miembro del Equipo NOBLE bajo el distintivo de 'Noble Seis'. Debido a la naturaleza clasificada de sus operaciones, B312 es desconocido para la mayoría de los militares del UNSC y la humanidad. Sin embargo, la Dra. Catherine Halsey declaró que B312 compartía la calificación de 'hiper-letal' con sólo otro Spartan y que cumplió un papel esencial para asegurar la victoria de la humanidad en la Guerra Covenant"
+    }
+]

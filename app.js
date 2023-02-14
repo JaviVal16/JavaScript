@@ -148,7 +148,7 @@ switch (clasificación) {
 
 //ACTIVIDAD 8
 
-let zapatos = [
+/* let zapatos = [
     {
         marca:      'NIKE',
         stock:      8,
@@ -175,7 +175,7 @@ zapatos.forEach(e => {
     console.log(e.marca, e.stock);
 });
 
-let filtroPrecio = zapatos.filter(e => e.precios > 200 /* || e.precios < 100 */);
+let filtroPrecio = zapatos.filter(e => e.precios > 200 || e.precios < 100);
 console.log(filtroPrecio);
 
 const zapatosMap = zapatos.map(e => e.precios);
@@ -197,4 +197,29 @@ zapatos.sort((a, b) =>{
 console.log(zapatos);
 
 
-console.log(Math.max(Math.round(...zapatosMap))); 
+console.log(Math.max(Math.round(...zapatosMap))); */
+
+
+//Actividad 10
+const urlGet = 'https://rickandmortyapi.com/api/character';
+const apiBtn = document.getElementById('getAPI');
+const charactersDiv = document.getElementById('characterCont');
+
+apiBtn.addEventListener('click', () => {
+    apiCall();
+});
+
+const apiCall = () => {
+    charactersDiv.innerHTML = '';
+    fetch(urlGet)
+        .then(data => data.json())
+        .then(info => info.results.forEach(personajes => {
+            charactersDiv.innerHTML +=
+                `
+        <div>
+        <h2>${personajes.name}</h2>
+        <img src="${personajes.image}" alt="${personajes.name}">
+        </div>
+        `
+        }))
+};
