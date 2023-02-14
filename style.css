@@ -26,6 +26,15 @@ html {
     display: flex;
     flex-direction: column;
     font-size: x-large;
+    height: auto;
+    width: auto;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
 }
 
 
@@ -48,7 +57,10 @@ img {
 
 footer {
     display: flex;
+    bottom: 0;
     justify-content: space-around;
+    align-items: center;
+    height: 100px;
 }
 
 .aFooter {
@@ -74,10 +86,7 @@ footer {
 }
 
 .wrapper {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 .RickMortyA {
