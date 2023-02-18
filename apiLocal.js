@@ -1,4 +1,4 @@
-const localGet = './spartans.json'
+const localGet = './spartans.json';
 const apiBtnLocal = document.getElementById('getAPILocal');
 const charactersDivLocal = document.getElementById('characterContLocal');
 
